@@ -1,10 +1,10 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 console.log(inquirer)
+
 const generateMarkdown = require("./generateMarkdown")
 
 const fs = require("fs");
-
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -39,9 +39,10 @@ const questions = [
         message: "Please enter project instructions, along with examples."
     },
     {
-        type: "input",
+        type: "rawlist",
         name: "license",
-        message: "Please select a license for your project."
+        message: "Please select a license for your project.",
+        choices: ["Apache 2.0 License", "BSD 3-Clause License", "BSD 2-Clause License", "Eclipse Public License 1.0", "GNU GPL v3", "GNU GPL v2", "GNU AGPL v3", "GNU LGPL v3", "GNU FDL v1.3", "IBM Public License Version 1.0", "MIT License", "Mozilla Public License 2.0"]
     },
     {
         type: "input",
