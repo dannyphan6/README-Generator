@@ -11,17 +11,17 @@ const questions = [
     {
         type: "input",
         name: "projectTitle",
-        message: "What is the title of your project?"
+        message: "Please enter your project title."
     },
     {
         type: "input",
         name: "githubName",
-        message: "What is your GitHub username?"
+        message: "Please enter your GitHub username."
     },
     {
         type: "input",
         name: "emailAddress",
-        message: "What is your email address?"
+        message: "Please enter your email address."
     },
     {
         type: "input",
@@ -31,27 +31,27 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "What command should I run to install dependencies?"
+        message: "Please describe step by step on the installation process."
     },
     {
         type: "input",
         name: "usage",
-        message: "What does the user need to know about this repository?"
+        message: "Please enter project instructions, along with examples."
     },
     {
         type: "input",
         name: "license",
-        message: "What licenses are used?"
+        message: "Please select a license for your project."
     },
     {
         type: "input",
         name: "contributors",
-        message: "Who else is going to be contributing to this repository?"
+        message: "Please provide details on how developers can contribute to your project."
     },
     {
         type: "input",
         name: "tests",
-        message: "What command should be used to run a test?"
+        message: "Please provide any tests that were used for this project and how to run them."
     },
 ]
 
