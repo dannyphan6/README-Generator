@@ -42,7 +42,7 @@ const questions = [
         type: "rawlist",
         name: "license",
         message: "Please select a license for your project.",
-        choices: ["Apache 2.0 License", "BSD 3-Clause License", "BSD 2-Clause License", "Eclipse Public License 1.0", "GNU GPL v3", "GNU GPL v2", "GNU AGPL v3", "GNU LGPL v3", "GNU FDL v1.3", "IBM Public License Version 1.0", "MIT License", "Mozilla Public License 2.0"]
+        choices: ["Apache 2.0 License", "BSD 3-Clause License", "BSD 2-Clause License", "Eclipse Public License 1.0", "GNU GPL v3", "GNU GPL v2", "GNU AGPL v3", "GNU LGPL v3", "GNU FDL v1.3", "IBM Public License Version 1.0", "MIT License", "Mozilla Public License 2.0", "None"]
     },
     {
         type: "input",
@@ -70,7 +70,7 @@ function init() {
     inquirer.prompt(questions).then( response => {
         console.log(response)
         // Takes blueprint of writeToFile and passes in values of 'readmeGenerator' and generateMarkdown(response)
-        writeToFile("readmeGenerator.md", generateMarkdown(response));
+        writeToFile("readmeGenerator.md", generateMarkdown({...response}));
     })
 }
 
