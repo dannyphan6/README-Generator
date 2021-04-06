@@ -67,7 +67,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     // Pass in questions to inquirer.prompt and then grabbing the user answers
-    inquirer.prompt(questions).then( response => {
+    inquirer.prompt(questions).then(response => {
         console.log(response)
         // Takes blueprint of writeToFile and passes in values of 'readmeGenerator' and generateMarkdown(response)
         writeToFile("readmeGenerator.md", generateMarkdown(response));
