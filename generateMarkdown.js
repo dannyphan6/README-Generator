@@ -2,6 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== 'None') {
+    // "%20" replaces all white spaces, which will help generate the correct link for badge
     license = license.split(" ").join("%20");
     return `![GitHub License](https://img.shields.io/badge/License-${license}-blue.svg)`
   };
