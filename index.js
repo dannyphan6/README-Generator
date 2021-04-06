@@ -70,7 +70,7 @@ function init() {
     inquirer.prompt(questions).then( response => {
         console.log(response)
         // Takes blueprint of writeToFile and passes in values of 'readmeGenerator' and generateMarkdown(response)
-        writeToFile("readmeGenerator.md", generateMarkdown({...response}));
+        writeToFile("readmeGenerator.md", generateMarkdown(response));
     })
 }
 

@@ -32,11 +32,11 @@ function generateMarkdown(data) {
   return `${renderLicenseBadge(data.license)}
   # ${data.projectTitle}
   ## Table of Contents 
-  * Project Description
-  * ![Installation] (#installation)
-  * Usage (#usage)
-  * Contributors (#contributors)
-  * Tests (#tests)
+  * [Project Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributors](#contributors)
+  * [Tests](#tests)
   * ${renderLicenseLink(data.license)}
 
   ## Project Description
