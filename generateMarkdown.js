@@ -2,9 +2,10 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
-    return `![GitHub License](https://img.shields.io/badge/License-${license}-blue.svg)`
-  } else {
-    return ""
+    return "";
+  }
+  if (license === "Apache 2.0 License") {
+    return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`
   }
 }
 
@@ -29,7 +30,8 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.projectTitle}
+  return `${renderLicenseBadge(data.license)}
+  # ${data.projectTitle}
   ## Table of Contents 
   * Project Description
   * Installation (#installation)
@@ -54,7 +56,6 @@ function generateMarkdown(data) {
   ${data.tests}
   
   ${renderLicenseSection(data.license)}
-  ${renderLicenseBadge(data.license)}
 
 `;
 }

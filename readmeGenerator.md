@@ -1,4 +1,4 @@
-# 2
+# 1
   ## Table of Contents 
   * Project Description
   * Installation (#installation)
@@ -8,21 +8,21 @@
   * [License](#license)
 
   ## Project Description
-  2
+  1
 
   ## Installation
-  2
+  1
 
   ## Usage
-  2
+  1
   
   ## Contributors
-  2
+  1
   
   ## Tests
-  2
+  1
   
   ## License
-    This project is licensed through BSD 3-Clause License
-  ![GitHub License](https://img.shields.io/badge/License-BSD 3-Clause License-blue.svg)
+    This project is licensed through Apache 2.0 License
+  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)
 
