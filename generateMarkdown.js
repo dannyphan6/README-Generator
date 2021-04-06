@@ -1,12 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== "None") {
-    return "";
+  if (license !== 'None') {
+    license = license.split(" ").join("%20");
+    return `![GitHub License](https://img.shields.io/badge/License-${license}-blue.svg)`;
   }
-  if (license === "Apache 2.0 License") {
-    return `![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`
-  }
+  return '';
 }
 
 // TODO: Create a function that returns the license link
@@ -34,7 +33,7 @@ function generateMarkdown(data) {
   # ${data.projectTitle}
   ## Table of Contents 
   * Project Description
-  * Installation (#installation)
+  * ![Installation] (#installation)
   * Usage (#usage)
   * Contributors (#contributors)
   * Tests (#tests)

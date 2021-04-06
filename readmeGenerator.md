@@ -1,28 +1,28 @@
-# 1
+![GitHub License](https://img.shields.io/badge/License-GNU%20GPL%20v3-blue.svg)
+  # 3
   ## Table of Contents 
   * Project Description
-  * Installation (#installation)
+  * ![Installation] (#installation)
   * Usage (#usage)
   * Contributors (#contributors)
   * Tests (#tests)
   * [License](#license)
 
   ## Project Description
-  1
+  3
 
   ## Installation
-  1
+  3
 
   ## Usage
-  1
+  3
   
   ## Contributors
-  1
+  3
   
   ## Tests
-  1
+  3
   
   ## License
-    This project is licensed through Apache 2.0 License
-  ![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)
+    This project is licensed through GNU GPL v3
 
