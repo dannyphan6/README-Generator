@@ -5,6 +5,8 @@ function renderLicenseBadge(license) {
     // "%20" replaces all white spaces, which will help generate the correct link for badge
     license = license.split(" ").join("%20");
     return `![GitHub License](https://img.shields.io/badge/License-${license}-blue.svg)`
+    
+
   };
   return "";
 };
@@ -57,7 +59,7 @@ function generateMarkdown(data) {
   ## Tests
   ${data.tests}
   
-  ${renderLicenseSection(data.license)}
+  ${renderLicenseSection(data.license)} 
 
   ## Questions
   If you have any questions, please feel free to contact the owner of this repository. Their contact info is listed below:
