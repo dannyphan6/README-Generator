@@ -13,7 +13,7 @@
   The following project is a command-line application that takes the user input from a list of questions, and then creates a README file. The list of questions creates a template for your README and will fill in all of the blanks. You never have to worry about creating a README again! This application will save you so much time down the road.
 
   ## Installation
-  In order to run this application, you simply run the command "npm i" in the terminal, to install all of the required dependencies.
+  In order to run this application, you simply run the command "npm i" in the terminal, to install all of the required dependencies. Once that is completed, then run the command "node index.js" to begin.
 
   ## Usage
    When "node index.js" is ran, the user will be prompted with questions such as: project title, GitHub name, email address, project description, installation, usage, type of license, contributors, and tests. Below is an example of what the README will look like, once generated. 
